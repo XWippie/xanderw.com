@@ -1,0 +1,24 @@
+<svg width="640" height="426" viewBox="0 0 640 426" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="426" fill="#E5E5E5"/>
+<g clip-path="url(#clip0)">
+<rect width="640" height="426" fill="url(#paint0_linear)"/>
+<path d="M109 297C138.282 286.276 199.874 250.353 211.99 192.446C224.107 134.539 252.379 89.3541 265 74" stroke="#902923" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M299 42L255 57.5L267.5 64M299 42L267.5 64M299 42L274 66.5M299 42L287 73L277 68M267.5 64L271 74M274 66.5L271 74M274 66.5L277 68M271 74L277 68" stroke="#902923" stroke-width="2"/>
+<rect x="-21" y="16.2843" width="40" height="200" rx="20" transform="rotate(-45 -21 16.2843)" fill="#8B241E"/>
+<rect x="-25" y="-39.7157" width="40" height="200" rx="20" transform="rotate(-45 -25 -39.7157)" fill="#8C201A"/>
+<rect x="-21" y="-85.7157" width="40" height="200" rx="20" transform="rotate(-45 -21 -85.7157)" fill="#902923"/>
+<rect x="-91" y="101.284" width="40" height="200" rx="20" transform="rotate(-45 -91 101.284)" fill="#9B2822"/>
+<rect x="-82" y="162.284" width="40" height="200" rx="20" transform="rotate(-45 -82 162.284)" fill="#902923"/>
+<rect x="-54" y="32.2843" width="40" height="200" rx="20" transform="rotate(-45 -54 32.2843)" fill="#A52A23"/>
+<rect x="-54" y="87.2843" width="40" height="200" rx="20" transform="rotate(-45 -54 87.2843)" fill="#841E18"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="2.53158e-05" y1="359" x2="1169" y2="113.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#040A0F"/>
+<stop offset="1" stop-color="#000C15" stop-opacity="0.83"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="640" height="426" fill="white"/>
+</clipPath>
+</defs>
+</svg>
