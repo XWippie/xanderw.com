@@ -352,7 +352,6 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   max-width: 1200px;
@@ -374,6 +373,7 @@ body {
 .card {
   list-style: none;
   position: relative;
+  text-align: center;
 }
 
 .card:before {
@@ -440,36 +440,26 @@ body {
   height: 100%;
   background-image: linear-gradient(15deg, #030d14 0%, #011c2f 150%);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.about-colum {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  align-items: center;
   justify-content: center;
   padding: 100px 0px;
 }
 
 #about-left {
   position: relative;
-  left: 400px;
+  right: -100px;
   width: 600px;
   height: 800px;
-  background-image: url(../image/Gelukstede\ 2\,\ 9700\ Oudenaarde\ -\ 1.jpg);
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(../image/Gelukstede\ 2\,\ 9700\ Oudenaarde\ -\ 1.jpg) no-repeat center
+      center / cover;
   box-shadow: 3px 3px 5px #000000;
   border-radius: 20px 0px 0px 20px;
 }
 #about-right {
   position: relative;
   width: 750px;
-  height: 550px;
+  height: 100%;
   background: #311715;
   z-index: 1;
   color: #b9baa3;
@@ -479,9 +469,7 @@ body {
   box-shadow: 5px 5px 5px #0000007c;
   border-radius: 0px 50px;
 }
-#about-right {
-  font-size: xx-large;
-}
+
 .about-bar {
   border: 2px solid #b9baa3;
 }
@@ -502,8 +490,28 @@ body {
   text-decoration-color: rgba(185, 186, 163, 1);
 }
 
-@media only screen and (max-width: 1250px) {
-}
+@media only screen and (max-width: 1100px) {
+  #about-left {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1;
+    left: 0;
 
-@media only screen and (max-width: 768px) {
+    bottom: -250px;
+  }
+  #about-right {
+    margin: 100px;
+    font-size: x-large;
+    padding: 40px;
+    z-index: 0;
+  }
+  .about-text ul {
+    padding: 20px;
+    font-size: large;
+  }
+  .about-download {
+    padding: 10px 15px;
+  }
 }
