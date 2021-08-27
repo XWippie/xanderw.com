@@ -645,3 +645,71 @@ body {
     font-size: small;
   }
 }
+
+/*skills*/
+.skills {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.skill-background {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(../image/keuboard.jpg) no-repeat center center / cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(0.3);
+}
+.skills-header h1 {
+  font-size: 75px;
+}
+
+.skills-lines {
+  width: 100%;
+  background: transparent;
+  height: 100%;
+  padding: 25px;
+}
+
+.skill-bar {
+  margin: 25px 50px;
+}
+
+.skill-outer {
+  height: 30px;
+  border: 3px solid #b9baa3;
+  border-radius: 10px;
+}
+
+.skill-inner {
+  height: 100%;
+  background: #011c2f;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.skill-inner {
+  font-size: x-large;
+  position: relative;
+  animation-name: skills;
+  animation-duration: 4s;
+}
+
+.skill-inner p {
+  position: absolute;
+  top: 50%;
+  transform: translate(7.5px, -50%);
+}
+
+@keyframes skills {
+  from {
+    width: 0px;
+  }
+  to {
+    width: auto;
+  }
+}
