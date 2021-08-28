@@ -623,14 +623,14 @@ body {
     left: 0;
     margin: 5vh auto 0vh auto;
     z-index: 1;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     box-shadow: 3px 3px 5px #000000;
     border-radius: 50px;
   }
 
   #about-right {
-    margin: 45vh 25px auto 25px;
+    margin: 35vh 25px auto 25px;
     font-size: large;
     padding: 40px;
     z-index: 0;
@@ -711,5 +711,24 @@ body {
   }
   to {
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-header h1 {
+    font-size: 40px;
+  }
+  .skills-lines {
+    padding: 0px;
+  }
+  .skill-bar {
+    margin: 15px 25px;
+  }
+  .skill-bar h1 {
+    font-size: large;
+    font-weight: 500;
+  }
+  .skill-inner {
+    font-size: large;
   }
 }
