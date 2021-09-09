@@ -167,18 +167,18 @@ body {
 }
 
 .name-top-opleiding {
-  width: 27ch;
+  width: 43ch;
   white-space: nowrap;
   overflow: hidden;
   border-color: transparent;
   font-family: monospace;
   font-size: 2em;
-  animation: typing 3s steps(27), blink 0.5s step-end 8 alternate;
+  animation: typing 3s steps(43), blink 0.5s step-end 8 alternate;
 }
 
 @keyframes typing {
   from {
-    width: 0;
+    width: 0ch;
   }
 }
 
@@ -206,7 +206,7 @@ body {
   }
 
   .name-top-opleiding {
-    font-size: 1rem;
+    font-size: 0.5rem;
     font-weight: 400;
     margin: 5px 0px;
   }
@@ -240,8 +240,8 @@ body {
 
 .card-grid {
   display: grid;
-  grid-column-gap: 24px;
   grid-row-gap: 24px;
+  grid-column-gap: 24px;
   max-width: 1200px;
   width: 100%;
 }
@@ -501,7 +501,7 @@ body {
 }
 
 .footer ul li a.whatsapp {
-  color: #25d366;
+  color: #007a2d;
 }
 
 .footer ul li a.instagram {
@@ -509,7 +509,7 @@ body {
 }
 
 .footer ul li a.github {
-  color: #6cc644;
+  color: #4078c0;
 }
 
 .footer ul li a.facebook:hover {
@@ -534,31 +534,37 @@ body {
 
 .footer ul li a.github:hover {
   color: #ffff;
-  background: #6cc644;
+  background: #4078c0;
 }
 
 @media only screen and (max-width: 768px) {
   /* footer */
   .footer {
     margin: 0;
-    height: 100%;
+    height: 20vh;
   }
 
   .footer ul li {
     padding: 0px;
-    padding: 0px 1px 5px 1px;
+    margin: 0px 2px;
   }
 
   .footer ul li a {
+    width: 45px;
+    height: 45px;
     margin: 0px;
     transition: none;
+    font-size: 25px;
   }
 
   .footer nav.top-footer {
     width: 100%;
     font-size: 1.6rem;
     font-weight: 400;
-    padding: 20px 0px 0px 0px;
+    padding: 15px 0px 10px 0px;
+  }
+  .bar-footer {
+    display: none;
   }
 }
 
@@ -599,10 +605,19 @@ body {
 .about-bar {
   border: 2px solid #b9baa3;
 }
+.about-text {
+  position: relative;
+  top: 10px;
+}
+
 .about-text ul {
   padding: 25px;
   font-size: x-large;
 }
+.about-d-top {
+  margin: 50px 0px 15px 0px;
+}
+
 .about-download {
   padding: 15px 25px;
   background: #030d14;
@@ -677,7 +692,8 @@ body {
 }
 
 .skill-bar {
-  margin: 25px 50px;
+  margin: 25px 25vh;
+  max-width: 1500px;
 }
 
 .skill-outer {
@@ -690,28 +706,15 @@ body {
   height: 100%;
   background: #011c2f;
   border-radius: 6px 0px 0px 6px;
-}
-
-.skill-inner {
   font-size: x-large;
   position: relative;
-  animation-name: skills;
-  animation-duration: 4s;
+  width: 0px;
 }
 
 .skill-inner p {
   position: absolute;
   top: 50%;
   transform: translate(7.5px, -50%);
-}
-
-@keyframes skills {
-  from {
-    width: 0px;
-  }
-  to {
-    width: auto;
-  }
 }
 
 @media only screen and (max-width: 768px) {
