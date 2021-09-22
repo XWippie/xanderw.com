@@ -40,7 +40,7 @@ body {
 }
 
 .hamburger div {
-  padding: 7px 0px 1px 0px;
+  padding: 1px 0px;
 }
 
 .nav-menu {
@@ -74,8 +74,7 @@ body {
   display: block;
   width: 25px;
   height: 3px;
-  margin: 0px 50%;
-  margin-bottom: 6px;
+  margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #b9baa3;
@@ -135,13 +134,17 @@ body {
   filter: brightness(0.3);
 }
 
-.wrapper {
+.home {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
+  min-height: 95vh;
+}
+.content-name {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .profile-pic {
@@ -150,9 +153,11 @@ body {
 }
 
 .bar-name {
-  border: 2px solid #902923;
+  background: #902923;
+  border: none;
+  height: 3.125px;
   width: 500px;
-  margin: 15px 0px;
+  margin: 15px auto;
 }
 
 .typing-demo {
@@ -164,6 +169,7 @@ body {
   font-family: monospace;
   font-size: 4em;
   font-weight: 700;
+  margin: 0 auto;
 }
 
 .name-top-opleiding {
@@ -174,6 +180,7 @@ body {
   font-family: monospace;
   font-size: 2em;
   animation: typing 3s steps(43), blink 0.5s step-end 8 alternate;
+  margin: 0 auto;
 }
 
 @keyframes typing {
@@ -347,7 +354,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .contact-background {
@@ -633,7 +640,7 @@ body {
 @media only screen and (max-width: 1100px) {
   #about-left {
     position: absolute;
-    top: 101vh;
+    top: 100vh;
     right: 0px;
     left: 0;
     margin: 5vh auto 0vh auto;

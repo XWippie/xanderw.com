@@ -46,18 +46,17 @@
         </div>
       </div>
     </nav>
-
-    <div class="wrapper" id="Home">
+    <div class="home" id="Home">
       <div class="background"></div>
+      <div class="content-name">
+        <img src="image/profile-pic.png" alt="" class="profile-pic" />
+        <hr class="bar-name" />
 
-      <img src="image/profile-pic.png" alt="" class="profile-pic" />
-      <span class="bar-name"></span>
-      <span class="name-top">
         <div class="typing-demo">Xander Waeghe</div>
-      </span>
-      <span class="name-top-opleiding">
-        Student Multimedia en Creatieve Technologie
-      </span>
+        <div class="name-top-opleiding">
+          Student Multimedia en Creatieve Technologie
+        </div>
+      </div>
     </div>
 
     <hr class="middle-bar" />
@@ -189,6 +188,7 @@
           id="fullName"
           placeholder="Full name"
           data-aos="fade-right"
+          required
         />
         <br />
         <input
@@ -197,6 +197,7 @@
           id="Email"
           placeholder="Email"
           data-aos="fade-left"
+          required
         /><br />
         <textarea
           name="messege"
@@ -205,6 +206,7 @@
           rows="10"
           placeholder="Messege"
           data-aos="fade-right"
+          required
         ></textarea>
         <br />
         <input type="submit" value="submit" />

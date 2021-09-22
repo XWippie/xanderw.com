@@ -9,37 +9,22 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="loading-page">
+    <div class="container">
       <div>
-        <h1>LOADING</h1>
-      </div>
-
-      <div class="loading-bar">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="loading-phone"></span>
-        <span class="loading-phone"></span>
-        <span class="loading-phone"></span>
-        <span class="loading-phone"></span>
-        <span class="loading-phone"></span>
+        <div class="blog_back">
+          <a href="" class="blog_button_back">
+            <span id="span_blog"><-&nbsp;</span>Back
+          </a>
+        </div>
+        <div class="blog">
+          <div class="blog_section">
+            <h1>Title</h1>
+            <hr />
+            <p>hiet kom er uitleg van de blog</p>
+            <a href="#" class="blog_github">github</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="wrapper">
-      <div class="background" id="Home"></div>
-      <div>
-        <h1>Comming Soon</h1>
-        <hr />
-        <a href="index.html">Go back</a>
-      </div>
-    </div>
-    <script>
-      $(window).on("load", function () {
-        console.log(window);
-        $(".loading-page").delay(2500).fadeOut("fast");
-      });
-    </script>
   </body>
 </html>
