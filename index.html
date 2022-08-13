@@ -4,263 +4,242 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="image/logo.svg" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/c043dd77c6.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Xander Waeghe | Home</title>
+    <meta name="msapplication-TileColor" content="#4FFCF0" />
+    <meta name="theme-color" content="#4FFCF0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Xander Waeghe - Home</title>
+    <meta name="title" content="Xander Waeghe - Home" />
+    <meta name="description" content="The official Xander Waeghe website" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xanderw.com/favicon-32x32.svg" />
+    <meta property="og:title" content="Xander Waeghe - Home" />
+    <meta
+      property="og:description"
+      content="The official Xander Waeghe website"
+    />
+    <meta property="og:image" content="https://xanderw.com/favicon-32x32.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://xanderw.com/favicon-32x32.svg"
+    />
+    <meta property="twitter:title" content="Xander Waeghe - Home" />
+    <meta
+      property="twitter:description"
+      content="The official Xander Waeghe website"
+    />
+    <meta
+      property="twitter:image"
+      content="https://xanderw.com/favicon-32x32.svg"
+    />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#4FFCF0" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+
+    <script src="js/app.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        toggleNav();
+      });
+
+      function toggleNav() {
+        let toggleTrigger = document.querySelectorAll('.js-toggle-nav');
+        for (let i = 0; i < toggleTrigger.length; i++) {
+          toggleTrigger[i].addEventListener('click', function () {
+            document.querySelector('body').classList.toggle('has-mobile-nav');
+          });
+        }
+      }
+    </script>
   </head>
   <body>
-    <nav class="navbar">
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#Home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#About" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#Projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item" id="nav-img">
-          <img src="image/logo.svg" alt="" class="nav-img" />
-        </li>
-        <li class="nav-item">
-          <a href="doc/CV.pdf" target="_blank" class="nav-link">CV</a>
-        </li>
-        <li class="nav-item">
-          <a href="blog.html" class="nav-link">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="#Contact" class="nav-link">Contact</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <div>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+    <div class="c-page">
+      <header class="o-row o-row--md o-row--header">
+        <div class="o-container">
+          <div class="c-header">
+            <div class="c-header__logo">
+              <h1 class="c-logo">
+                <svg
+                  width="48"
+                  height="51"
+                  viewBox="0 0 115 124"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.2742 0.845779H16.7915L26.5715 15.8718C27.556 15.7812 28.5558 16.2294 29.1263 17.1192C29.9414 18.3905 29.5715 20.0818 28.3002 20.8969C27.0289 21.712 25.3376 21.3422 24.5225 20.0709C24.001 19.2575 23.9645 18.2721 24.3389 17.4543L13.529 0.845779H8.49992L33.3391 39.0091C33.3616 39.0436 33.3823 39.0788 33.4013 39.1146C34.3878 39.0215 35.3905 39.4697 35.9622 40.3614C36.7773 41.6327 36.4074 43.324 35.1362 44.1391C33.8649 44.9542 32.1735 44.5844 31.3584 43.3131C30.8328 42.4932 30.7999 41.4988 31.1838 40.6772C31.1344 40.623 31.0887 40.5641 31.0474 40.5006L5.23738 0.845779H4.37C1.9965 0.845779 0.562979 3.47152 1.84647 5.46806L37.1956 60.4555C37.8368 61.4529 37.8303 62.7344 37.1791 63.7254L1.0541 118.698C-0.256845 120.693 1.17411 123.346 3.56121 123.346H31.3532C32.3789 123.346 33.3335 122.822 33.8842 121.956L54.969 88.823C56.1479 86.9705 58.8521 86.9706 60.031 88.8231L81.1159 121.956C81.6665 122.822 82.6211 123.346 83.6468 123.346H87.9292L82.527 115.046C82.1152 114.413 82.2943 113.566 82.9271 113.154C83.5599 112.742 84.4069 112.921 84.8188 113.554L91.1918 123.346H96.2209L75.6911 91.8036C75.2792 91.1707 75.4583 90.3238 76.0912 89.9119C76.724 89.5 77.5709 89.6791 77.9828 90.312L99.4164 123.243C99.4317 123.266 99.4462 123.29 99.4599 123.314C99.4659 123.325 99.4716 123.335 99.4773 123.346H104.966L87.9958 97.2723C87.5839 96.6395 87.763 95.7925 88.3959 95.3807C89.0287 94.9688 89.8756 95.1479 90.2875 95.7807L108.229 123.346H111.439C113.826 123.346 115.257 120.693 113.946 118.698L77.8209 63.7253C77.1697 62.7344 77.1633 61.4529 77.8044 60.4555L113.154 5.46805C114.437 3.47152 113.004 0.845779 110.63 0.845779H82.8039C81.7607 0.845779 80.7925 1.38764 80.2469 2.27673L60.0475 35.1942C58.879 37.0985 56.1136 37.103 54.9388 35.2026L34.5794 2.26831C34.0327 1.38402 33.0672 0.845779 32.0276 0.845779H25.5368L38.8761 21.3405C39.8607 21.2499 40.8604 21.6981 41.4309 22.5879C42.246 23.8592 41.8762 25.5506 40.6049 26.3657C39.3336 27.1807 37.6422 26.8109 36.8271 25.5396C36.3056 24.7262 36.2692 23.7408 36.6436 22.9231L22.2742 0.845779Z"
+                    fill="url(#icon_color)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="icon_color"
+                      x1="-2"
+                      y1="1"
+                      x2="117"
+                      y2="123"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#F45C52" />
+                      <stop offset="1" stop-color="#D5DA73" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </h1>
+            </div>
+            <div v class="c-header__nav c-header__nav--main">
+              <nav class="c-nav">
+                <ul class="o-list c-nav__list">
+                  <li class="c-nav__item is-selected">
+                    <a href="#!" class="c-nav__link">Home</a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#!" class="c-nav__link">About</a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#!" class="c-nav__link">Projects</a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#!" class="c-nav__link">CV</a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#!" class="c-nav__link">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="c-header__nav">
+              <nav class="c-nav c-nav--meta">
+                <ul class="o-list c-nav__list">
+                  <li class="c-nav__item">
+                    <a href="#!" class="c-nav__link c-nav__link--meta"
+                      >LinkedIn</a
+                    >
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#!" class="c-nav__link c-nav__link--meta"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#!" class="c-nav__link c-nav__link--meta"
+                      >Instagram</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="c-header__mobile-nav-trigger">
+              <button class="o-button-reset c-nav-trigger js-toggle-nav">
+                <svg
+                  class="c-nav-trigger__svg"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="home" id="Home">
-      <div class="background"></div>
-      <div class="content-name">
-        <img src="image/profile-pic.png" alt="" class="profile-pic" />
-        <hr class="bar-name" />
-
-        <div class="typing-demo">Xander Waeghe</div>
-        <div class="name-top-opleiding">
-          Student Multimedia en Creatieve Technologie
-        </div>
-      </div>
+      </header>
     </div>
 
-    <hr class="middle-bar" />
-
-    <div class="about" id="About">
-      <div id="about-left" data-aos="fade-right"></div>
-      <div id="about-right" data-aos="fade-left">
-        <h1>About Me</h1>
-        <hr class="about-bar" />
-        <span class="about-text">
-          <p>
-            My name is Xander Waeghe, I am 18 years old and live in belgium East
-            Flanders. I am a college student Multimedia and Creative Technology
-            at the howest in kortrijk. Currently I am working as a student in a
-            supermarket
+    <aside class="c-mobile-nav">
+      <div class="c-mobile-nav__bg"></div>
+      <div class="c-mobile-nav__body">
+        <div class="c-mobile-nav__header">
+          <p class="c-logo">
+            <svg
+              width="48"
+              height="51"
+              viewBox="0 0 115 124"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.2742 0.845779H16.7915L26.5715 15.8718C27.556 15.7812 28.5558 16.2294 29.1263 17.1192C29.9414 18.3905 29.5715 20.0818 28.3002 20.8969C27.0289 21.712 25.3376 21.3422 24.5225 20.0709C24.001 19.2575 23.9645 18.2721 24.3389 17.4543L13.529 0.845779H8.49992L33.3391 39.0091C33.3616 39.0436 33.3823 39.0788 33.4013 39.1146C34.3878 39.0215 35.3905 39.4697 35.9622 40.3614C36.7773 41.6327 36.4074 43.324 35.1362 44.1391C33.8649 44.9542 32.1735 44.5844 31.3584 43.3131C30.8328 42.4932 30.7999 41.4988 31.1838 40.6772C31.1344 40.623 31.0887 40.5641 31.0474 40.5006L5.23738 0.845779H4.37C1.9965 0.845779 0.562979 3.47152 1.84647 5.46806L37.1956 60.4555C37.8368 61.4529 37.8303 62.7344 37.1791 63.7254L1.0541 118.698C-0.256845 120.693 1.17411 123.346 3.56121 123.346H31.3532C32.3789 123.346 33.3335 122.822 33.8842 121.956L54.969 88.823C56.1479 86.9705 58.8521 86.9706 60.031 88.8231L81.1159 121.956C81.6665 122.822 82.6211 123.346 83.6468 123.346H87.9292L82.527 115.046C82.1152 114.413 82.2943 113.566 82.9271 113.154C83.5599 112.742 84.4069 112.921 84.8188 113.554L91.1918 123.346H96.2209L75.6911 91.8036C75.2792 91.1707 75.4583 90.3238 76.0912 89.9119C76.724 89.5 77.5709 89.6791 77.9828 90.312L99.4164 123.243C99.4317 123.266 99.4462 123.29 99.4599 123.314C99.4659 123.325 99.4716 123.335 99.4773 123.346H104.966L87.9958 97.2723C87.5839 96.6395 87.763 95.7925 88.3959 95.3807C89.0287 94.9688 89.8756 95.1479 90.2875 95.7807L108.229 123.346H111.439C113.826 123.346 115.257 120.693 113.946 118.698L77.8209 63.7253C77.1697 62.7344 77.1633 61.4529 77.8044 60.4555L113.154 5.46805C114.437 3.47152 113.004 0.845779 110.63 0.845779H82.8039C81.7607 0.845779 80.7925 1.38764 80.2469 2.27673L60.0475 35.1942C58.879 37.0985 56.1136 37.103 54.9388 35.2026L34.5794 2.26831C34.0327 1.38402 33.0672 0.845779 32.0276 0.845779H25.5368L38.8761 21.3405C39.8607 21.2499 40.8604 21.6981 41.4309 22.5879C42.246 23.8592 41.8762 25.5506 40.6049 26.3657C39.3336 27.1807 37.6422 26.8109 36.8271 25.5396C36.3056 24.7262 36.2692 23.7408 36.6436 22.9231L22.2742 0.845779Z"
+                fill="url(#icon_color)"
+              />
+              <defs>
+                <linearGradient
+                  id="icon_color"
+                  x1="-2"
+                  y1="1"
+                  x2="117"
+                  y2="123"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#F45C52" />
+                  <stop offset="1" stop-color="#D5DA73" />
+                </linearGradient>
+              </defs>
+            </svg>
           </p>
-          <br />
-          <br />
-          <p>
-            My interests range from playing guitar to gaming to programming to
-            training (sports). I love learning about the new technology and
-            computer building. A complete setup build would be one of my dreams.
-            My hobbies are momnetel basketball, programming and self-study about
-            computers.
-          </p>
-          <div class="about-d-top">
-            <a href="#" class="about-download">Download CV</a>
-          </div>
-        </span>
-      </div>
-    </div>
-
-    <hr class="middle-bar" />
-
-    <div class="skills">
-      <div class="skill-background"></div>
-      <div class="skills-header">
-        <h1>Skills</h1>
-      </div>
-      <div class="skills-lines">
-        <div class="skill-bar" data-aos="fade-right">
-          <h1>HTML</h1>
-          <div class="skill-outer">
-            <div class="skill-inner" style="width: 80%">
-              <p>80%</p>
-            </div>
-          </div>
+          <button class="o-button-reset c-nav-trigger js-toggle-nav">
+            <svg
+              class="c-nav-trigger__svg"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="skill-bar" data-aos="fade-right">
-          <h1>CSS</h1>
-          <div class="skill-outer">
-            <div class="skill-inner" style="width: 75%">
-              <p>75%</p>
-            </div>
-          </div>
+        <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
+          <nav class="c-nav">
+            <ul class="o-list c-nav__list">
+              <li class="c-nav__item is-selected">
+                <a href="#!" class="c-nav__link">Home</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#!" class="c-nav__link">About</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#!" class="c-nav__link">Projects</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#!" class="c-nav__link">CV</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#!" class="c-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="skill-bar" data-aos="fade-right">
-          <h1>JavaScript</h1>
-          <div class="skill-outer">
-            <div class="skill-inner" style="width: 15%">
-              <p>15%</p>
-            </div>
-          </div>
-        </div>
-        <div class="skill-bar" data-aos="fade-right">
-          <h1>PHP</h1>
-          <div class="skill-outer">
-            <div class="skill-inner" style="width: 25%">
-              <p>25%</p>
-            </div>
-          </div>
+        <div class="c-mobile-nav__nav">
+          <nav class="c-nav c-nav--meta">
+            <ul class="o-list c-nav__list">
+              <li class="c-nav__item">
+                <a href="#!" class="c-nav__link c-nav__link--meta">LinkedIn</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#!" class="c-nav__link c-nav__link--meta">Facebook</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#!" class="c-nav__link c-nav__link--meta">Instagram</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-
-    <hr class="middle-bar" />
-
-    <div class="Projects" id="Projects">
-      <div class="projects-header">
-        <h1>Projects</h1>
-        <h4>Here are some projects I made</h4>
-      </div>
-      <div class="hero-section">
-        <div class="card-grid">
-          <a class="card" href="#" data-aos="zoom-in">
-            <div class="card__background" id="backgound-p-1"></div>
-            <div class="card__content">
-              <span class="card__category">Project 1</span>
-              <h3 class="card__heading">Project Name</h3>
-            </div>
-          </a>
-          <a class="card" href="#" data-aos="zoom-in">
-            <div class="card__background" id="backgound-p-1"></div>
-            <div class="card__content">
-              <span class="card__category">Project 2</span>
-              <h3 class="card__heading">Project Name</h3>
-            </div>
-          </a>
-          <a class="card" href="#" data-aos="zoom-in">
-            <div class="card__background" id="backgound-p-1"></div>
-            <div class="card__content">
-              <span class="card__category">Project 3</span>
-              <h3 class="card__heading">Project Name</h3>
-            </div>
-          </a>
-          <a class="card" href="#" data-aos="zoom-in">
-            <div class="card__background" id="backgound-p-1"></div>
-            <div class="card__content">
-              <span class="card__category">Project 4</span>
-              <h3 class="card__heading">Project Name</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <hr class="middle-bar" />
-
-    <div class="Contact" id="Contact">
-      <div class="contact-background"></div>
-      <div class="header-form">
-        <h1>Contact Me</h1>
-        <h4>I'd love to hear from you</h4>
-      </div>
-      <form action="POST" class="form">
-        <input
-          type="text"
-          name="fullName"
-          id="fullName"
-          placeholder="Full name"
-          data-aos="fade-right"
-          required
-        />
-        <br />
-        <input
-          type="email"
-          name="Email"
-          id="Email"
-          placeholder="Email"
-          data-aos="fade-left"
-          required
-        /><br />
-        <textarea
-          name="messege"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Messege"
-          data-aos="fade-right"
-          required
-        ></textarea>
-        <br />
-        <input type="submit" value="submit" />
-      </form>
-    </div>
-
-    <hr class="middle-bar" />
-    <script>
-      const isHover = (e) => e.parentElement.querySelector(":hover") === e;
-
-      const myDiv1 = document.getElementById("Home");
-      const myDiv2 = document.getElementById("About");
-      const myDiv3 = document.getElementById("Projects");
-      const myDiv4 = document.getElementById("Contact");
-
-      document.addEventListener("mousemove", function checkHover() {
-        const hover1 = isHover(myDiv1);
-        const hover2 = isHover(myDiv2);
-        const hover3 = isHover(myDiv3);
-        const hover4 = isHover(myDiv4);
-
-        if (hover1 == true) {
-          document.title = "Xander Waeghe | Home";
-        } else if (hover2 == true) {
-          document.title = "Xander Waeghe | About";
-        } else if (hover3 == true) {
-          document.title = "Xander Waeghe | Projects";
-        } else if (hover4 == true) {
-          document.title = "Xander Waeghe | Contact";
-        }
-      });
-    </script>
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
-
-      hamburger.addEventListener("click", mobileMenu);
-
-      function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      }
-      const navLink = document.querySelectorAll(".nav-link");
-
-      navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-      function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-      }
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    </aside>
   </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "xanderw",
+  "short_name": "xanderw",
+  "icons": [
+    {
+      "src": "/Android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "",
+  "background_color": "",
+  "display": "standalone"
+}
