@@ -521,7 +521,6 @@ svg {
   bottom: 0;
   right: 0;
   background-color: #202024;
-  transition: opacity 0.25 ease;
 }
 
 .has-mobile-nav .c-mobile-nav__bg {
@@ -535,8 +534,8 @@ svg {
   width: 100vw;
   background-color: #fff;
   opacity: 0;
-  transform: translateX(-100);
   transition: transform 0.25s ease;
+  transform: translateX(-100em);
 }
 
 .has-mobile-nav .c-mobile-nav__body {
@@ -547,7 +546,7 @@ svg {
 .c-page {
   opacity: 1;
   transform: translateX(0);
-  transition: transform 0.25 ease;
+  transition: transform 0.25s ease;
 }
 
 .has-mobile-nav .c-page {
