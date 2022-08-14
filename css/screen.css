@@ -584,7 +584,7 @@ svg {
 }
 
 .c-nav-trigger__svg {
-  fill: #EBE1E1;
+  fill: #ebe1e1;
   height: 100%;
 }
 
@@ -607,19 +607,19 @@ svg {
 .c-nav__link,
 .c-nav__link:visited,
 .c-nav__link:active {
-  color: #EBE1E1;
+  color: #ebe1e1;
 }
 
 .c-nav__link--meta,
 .c-nav__link--meta:visited,
 .c-nav__link--meta:active {
-  color: #B84B20;
+  color: #b84b20;
 }
 
 .is-selected .c-nav__link,
 .c-nav__link:hover,
 .c-nav__link:focus {
-  color: #8B3918;
+  color: #8b3918;
 }
 
 @media (min-width: 992px) {
@@ -752,7 +752,8 @@ svg {
   filter: brightness(0.2);
 }
 
-/* if lag remove code .home-background::before { */
+/* if lag remove code */
+.home-background::before {
   content: '';
   position: absolute;
   width: 100%;
