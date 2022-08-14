@@ -467,6 +467,8 @@ svg {
   position: fixed;
   width: 100%;
   padding: 24px;
+  top: 0;
+  z-index: 1;
 }
 
 .c-header__nav {
@@ -532,7 +534,7 @@ svg {
   padding: 24px;
   height: 100vh;
   width: 100vw;
-  background-color: #fff;
+  background-color: #0d0101;
   opacity: 0;
   transition: transform 0.25s ease;
   transform: translateX(-100em);
