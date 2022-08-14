@@ -181,6 +181,11 @@ a:focus {
   color: #3e3ea8;
 }
 
+svg {
+  width: 100%;
+  height: 100%;
+}
+
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
@@ -459,6 +464,9 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 24px;
 }
 
 .c-header__nav {
@@ -576,7 +584,7 @@ a:focus {
 }
 
 .c-nav-trigger__svg {
-  fill: #202024;
+  fill: #EBE1E1;
   height: 100%;
 }
 
@@ -599,19 +607,19 @@ a:focus {
 .c-nav__link,
 .c-nav__link:visited,
 .c-nav__link:active {
-  color: #202024;
+  color: #EBE1E1;
 }
 
 .c-nav__link--meta,
 .c-nav__link--meta:visited,
 .c-nav__link--meta:active {
-  color: #6c6c75;
+  color: #B84B20;
 }
 
 .is-selected .c-nav__link,
 .c-nav__link:hover,
 .c-nav__link:focus {
-  color: #5051db;
+  color: #8B3918;
 }
 
 @media (min-width: 992px) {
@@ -733,9 +741,35 @@ a:focus {
   }
 }
 
+.home-background {
+  width: 100%;
+  height: 80vh;
+  background-color: #b84b20;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(../image/background.jpg) no-repeat center center / cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.2);
+}
+
+/* if lag remove code .home-background::before { */
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+.content {
+  width: 100%;
+  height: 1000vh;
+}
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
+.u-marging-r {
+  margin: 0;
+}
 /*
     Utilities: spacing
     ---
