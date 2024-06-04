@@ -63,7 +63,50 @@
         }
       }
     </script>
+
+    <style>
+      body {
+        font-family: monospace, 'Courier New', Courier;
+        width: 100dvw;
+        height: 100dvh;
+        margin: 0;
+        padding: 0;
+        background-color: #004b88;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* h1 needs to hava typing effect */
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      h1::after {
+        content: '|';
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+
+    </style>
   </head>
   <body>
+    <h1>
+      Under construction - Page coming soon
+    </h1>
   </body>
 </html>
